@@ -1,109 +1,146 @@
-一、需求分析与目标定义
-明确核心功能
+# ASH - Advanced Smart Hub
 
-RSS订阅管理（增删改查）
-内容抓取与更新（定时/手动）
-多格式解析（RSS/Atom/JSON Feed）
-用户界面（文章列表、分类、搜索）
-跨平台支持（Web/移动端/桌面）
-扩展功能（可选）
+ASH (Advanced Smart Hub) 是一个现代化的RSS阅读器，提供简洁优雅的阅读体验。通过ASH，你可以轻松管理和阅读你的RSS订阅内容。
 
-智能推荐（基于阅读历史）
-社交分享/书签同步
-离线阅读
-API支持第三方集成
-用户场景
+## 功能特点
 
-普通用户：订阅博客、新闻
-开发者：通过API集成数据
-高级用户：自定义过滤规则
-二、技术选型
-前端
+### MVP版本（当前）
+- RSS订阅管理
+  - 添加新的RSS订阅源
+  - 查看订阅列表
+  - 自动更新订阅内容（每30分钟）
+- 文章阅读
+  - 查看文章列表
+  - 阅读文章内容
+  - 支持图片显示
+  - 原文链接跳转
 
-框架：React/Vue（Web）、React Native/Flutter（移动端）
-关键库：rss-parser（解析）、axios（HTTP请求）
-后端
+## 技术栈
 
-语言：Node.js（高效I/O）、Python（数据处理）
-框架：Express.js（Node）、Django（Python）
-数据库：PostgreSQL（关系型）、Redis（缓存）
-基础设施
+### 前端
+- React 18
+- TypeScript
+- Chakra UI（UI组件库）
+- React Query（数据获取和缓存）
+- Vite（构建工具）
 
-部署：Docker + Kubernetes（容器化）
-服务：AWS/AliCloud（云服务器）
-任务队列：Celery（Python）、Bull（Node.js）
-三、架构设计
-模块划分
+### 后端
+- Node.js
+- Express
+- SQLite（数据存储）
+- RSS Parser（RSS解析）
+- Winston（日志记录）
+- Node-cron（定时任务）
 
-用户模块：注册/登录、权限控制
-订阅模块：OPML导入导出、分类标签
-爬虫模块：定时抓取、去重、异常重试
-内容处理：正文提取、关键词分析
-推送模块：邮件/Webhook通知
-数据流设计
+## 快速开始
 
-mermaid
-graph LR
-User-->|添加订阅|Backend
-Backend-->|存储|DB
-Scheduler-->|定时触发|Crawler
-Crawler-->|抓取数据|Parser
-Parser-->|结构化数据|DB
-Frontend-->|请求数据|API
-API-->|返回JSON|Frontend
-四、开发阶段
-MVP（最小可行产品）
+### 环境要求
+- Node.js 18+
+- npm 8+
 
-核心功能：订阅管理+基础阅读界面
-技术验证：RSS解析稳定性测试
-迭代开发
+### 安装和运行
 
-第一周：搭建框架，实现订阅添加/列表展示
-第二周：定时抓取、内容存储
-第三周：用户系统、UI优化
-第四周：测试与部署
-关键技术实现
+1. 克隆项目后，分别安装前端和后端依赖：
 
-RSS解析：处理CDATA、非标准XML
-性能优化：增量更新、缓存策略
-安全措施：防XSS攻击、请求频率限制
-五、测试与部署
-测试策略
+```bash
+# 安装后端依赖
+cd backend
+npm install
 
-单元测试：Jest（JS）、Pytest（Python）
-集成测试：Postman（API验证）
-压力测试：Locust（模拟高并发）
-部署流程
+# 安装前端依赖
+cd frontend
+npm install
+```
 
-使用GitHub Actions/Jenkins实现CI/CD
-容器化部署（Dockerfile示例）：
-dockerfile
-FROM node:18-alpine
-WORKDIR /app
-COPY package*.json ./
-RUN npm install
-COPY . .
-CMD ["npm", "start"]
-六、维护与迭代
-监控工具
+2. 启动后端服务：
 
-Prometheus（性能指标）
-Sentry（错误追踪）
-用户反馈
+```bash
+cd backend
+npm run dev
+```
 
-内置反馈表单
-社区运营（Discord/Slack）
-长期计划
+3. 启动前端开发服务器：
 
-插件系统（支持自定义解析器）
-开源协作（吸引开发者贡献）
-工具与资源推荐
-开源参考
+```bash
+cd frontend
+npm run dev
+```
 
-Miniflux（Golang RSS阅读器）
-FreshRSS（PHP实现）
-设计资源
+4. 访问应用：
+打开浏览器访问 http://localhost:5173
 
-Figma社区（RSS阅读器UI模板）
-RSS规范文档（参考链接）
-通过以上步骤，你可以逐步实现一个可扩展、高性能的RSS工具。建议从MVP开始快速验证市场，再根据用户反馈迭代增强功能.
+## 使用说明
+
+1. 添加RSS订阅：
+   - 在顶部输入框中输入RSS订阅地址
+   - 点击"添加订阅"按钮
+
+2. 查看文章：
+   - 在左侧订阅列表中选择要查看的订阅源
+   - 右侧会显示该订阅源的所有文章
+   - 点击文章标题可以跳转到原文
+
+## 开发计划
+
+### 下一步功能
+- [ ] 订阅源分类管理
+- [ ] 文章搜索功能
+- [ ] 文章收藏功能
+- [ ] 阅读进度记录
+- [ ] 移动端适配优化
+
+## 项目结构
+
+```
+.
+├── backend/                # ASH后端代码
+│   ├── src/
+│   │   └── index.js       # 后端入口文件
+│   └── package.json
+├── frontend/              # ASH前端代码
+│   ├── src/
+│   │   ├── App.tsx       # 主应用组件
+│   │   └── main.tsx      # 前端入口文件
+│   ├── index.html
+│   └── package.json
+└── README.md
+```
+
+## 数据库结构
+
+### feeds表
+- id: 主键
+- url: RSS订阅地址
+- title: 订阅源标题
+- description: 订阅源描述
+- last_updated: 最后更新时间
+
+### articles表
+- id: 主键
+- feed_id: 关联的订阅源ID
+- title: 文章标题
+- link: 文章链接
+- content: 文章内容
+- pub_date: 发布时间
+
+## 错误处理
+
+- 订阅添加失败：检查RSS地址是否正确
+- 内容更新失败：查看后端日志文件
+- 数据库错误：检查数据库文件权限
+
+## 日志记录
+
+- 错误日志：`error.log`
+- 综合日志：`combined.log`
+
+## 贡献指南
+
+1. Fork 项目
+2. 创建功能分支
+3. 提交更改
+4. 发起 Pull Request
+
+## 许可证
+
+MIT

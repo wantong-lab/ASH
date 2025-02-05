@@ -1,23 +1,40 @@
 {
-  "name": "frontend",
+  "name": "ash-frontend",
   "version": "1.0.0",
-  "type": "module",
+  "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "preview": "vite preview"
   },
-  "keywords": [],
+  "keywords": [
+    "rss",
+    "reader",
+    "ash"
+  ],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "type": "module",
+  "description": "ASH - Advanced Smart Hub RSS Reader Frontend",
   "dependencies": {
+    "@chakra-ui/icons": "^2.2.4",
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "@vitejs/plugin-react": "^4.2.0",
+    "axios": "^1.6.5",
+    "framer-motion": "^10.17.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.12.0",
+    "react-query": "^3.39.3",
     "typescript": "^4.9.5",
     "vite": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "prettier": "^3.1.1"
   }
 }

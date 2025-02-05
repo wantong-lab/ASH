@@ -1,0 +1,164 @@
+{"level":"info","message":"Initializing database tables","service":"ash-backend","timestamp":"2025-02-05 15:21:18"}
+{"level":"info","message":"ASH Backend Server running on port 3000","service":"ash-backend","timestamp":"2025-02-05 15:21:18"}
+{"level":"info","message":"Connected to SQLite database","service":"ash-backend","timestamp":"2025-02-05 15:21:18"}
+{"level":"info","message":"Feeds table initialized successfully","service":"ash-backend","timestamp":"2025-02-05 15:21:18"}
+{"level":"info","message":"Articles table initialized successfully","service":"ash-backend","timestamp":"2025-02-05 15:21:18"}
+{"level":"info","message":"Fetching all feeds","service":"ash-backend","timestamp":"2025-02-05 15:21:29"}
+{"level":"info","message":"Successfully retrieved 1 feeds","service":"ash-backend","timestamp":"2025-02-05 15:21:29"}
+{"level":"info","message":{"duration":"7ms","ip":"::1","method":"GET","path":"/api/feeds","status":304,"type":"request"},"service":"ash-backend","timestamp":"2025-02-05 15:21:29"}
+{"level":"info","message":"Fetching articles for feed ID: 1","service":"ash-backend","timestamp":"2025-02-05 15:21:31"}
+{"level":"info","message":"Successfully retrieved 0 articles for feed ID: 1","service":"ash-backend","timestamp":"2025-02-05 15:21:31"}
+{"level":"info","message":{"duration":"3ms","ip":"::1","method":"GET","path":"/api/feeds/1/articles","status":304,"type":"request"},"service":"ash-backend","timestamp":"2025-02-05 15:21:31"}
+{"level":"info","message":"Fetching all feeds","service":"ash-backend","timestamp":"2025-02-05 15:21:36"}
+{"level":"info","message":"Successfully retrieved 1 feeds","service":"ash-backend","timestamp":"2025-02-05 15:21:36"}
+{"level":"info","message":{"duration":"1ms","ip":"::1","method":"GET","path":"/api/feeds","status":304,"type":"request"},"service":"ash-backend","timestamp":"2025-02-05 15:21:36"}
+{"level":"info","message":"Fetching articles for feed ID: 1","service":"ash-backend","timestamp":"2025-02-05 15:21:37"}
+{"level":"info","message":"Successfully retrieved 0 articles for feed ID: 1","service":"ash-backend","timestamp":"2025-02-05 15:21:37"}
+{"level":"info","message":{"duration":"2ms","ip":"::1","method":"GET","path":"/api/feeds/1/articles","status":304,"type":"request"},"service":"ash-backend","timestamp":"2025-02-05 15:21:37"}
+{"level":"info","message":"Fetching all feeds","service":"ash-backend","timestamp":"2025-02-05 15:21:59"}
+{"level":"info","message":"Successfully retrieved 1 feeds","service":"ash-backend","timestamp":"2025-02-05 15:21:59"}
+{"level":"info","message":{"duration":"2ms","ip":"::1","method":"GET","path":"/api/feeds","status":304,"type":"request"},"service":"ash-backend","timestamp":"2025-02-05 15:21:59"}
+{"level":"info","message":"Initializing database tables","service":"ash-backend","timestamp":"2025-02-05 15:22:36"}
+{"address":"::","code":"EADDRINUSE","errno":-4091,"level":"error","message":"Uncaught Exception: listen EADDRINUSE: address already in use :::3000","port":3000,"service":"ash-backend","stack":"Error: listen EADDRINUSE: address already in use :::3000\n    at Server.setupListenHandle [as _listen2] (node:net:1912:16)\n    at listenInCluster (node:net:1969:12)\n    at Server.listen (node:net:2074:7)\n    at Function.listen (C:\\Users\\25819\\Desktop\\ASH\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at Object.<anonymous> (C:\\Users\\25819\\Desktop\\ASH\\backend\\src\\index.js:234:5)\n    at Module._compile (node:internal/modules/cjs/loader:1565:14)\n    at Object..js (node:internal/modules/cjs/loader:1708:10)\n    at Module.load (node:internal/modules/cjs/loader:1318:32)\n    at Function._load (node:internal/modules/cjs/loader:1128:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)","syscall":"listen","timestamp":"2025-02-05 15:22:36"}
+{"level":"info","message":"Connected to SQLite database","service":"ash-backend","timestamp":"2025-02-05 15:22:36"}
+{"level":"info","message":"Feeds table initialized successfully","service":"ash-backend","timestamp":"2025-02-05 15:22:36"}
+{"level":"info","message":"Articles table initialized successfully","service":"ash-backend","timestamp":"2025-02-05 15:22:36"}
+{"level":"info","message":"Initializing database tables","service":"ash-backend","timestamp":"2025-02-05 15:25:25"}
+{"level":"info","message":"ASH Backend Server running on port 3000","service":"ash-backend","timestamp":"2025-02-05 15:25:25"}
+{"level":"info","message":"Connected to SQLite database","service":"ash-backend","timestamp":"2025-02-05 15:25:25"}
+{"level":"info","message":"Feeds table initialized successfully","service":"ash-backend","timestamp":"2025-02-05 15:25:25"}
+{"level":"info","message":"Articles table initialized successfully","service":"ash-backend","timestamp":"2025-02-05 15:25:25"}
+{"level":"info","message":"Fetching all feeds","service":"ash-backend","timestamp":"2025-02-05 15:25:33"}
+{"level":"info","message":"Successfully retrieved 1 feeds","service":"ash-backend","timestamp":"2025-02-05 15:25:33"}
+{"level":"info","message":{"duration":"5ms","ip":"::1","method":"GET","path":"/api/feeds","status":304,"type":"request"},"service":"ash-backend","timestamp":"2025-02-05 15:25:33"}
+{"level":"info","message":"Fetching all feeds","service":"ash-backend","timestamp":"2025-02-05 15:25:33"}
+{"level":"info","message":"Successfully retrieved 1 feeds","service":"ash-backend","timestamp":"2025-02-05 15:25:33"}
+{"level":"info","message":{"duration":"2ms","ip":"::1","method":"GET","path":"/api/feeds","status":304,"type":"request"},"service":"ash-backend","timestamp":"2025-02-05 15:25:33"}
+{"level":"info","message":"Fetching articles for feed ID: 1","service":"ash-backend","timestamp":"2025-02-05 15:25:36"}
+{"level":"info","message":"Successfully retrieved 0 articles for feed ID: 1","service":"ash-backend","timestamp":"2025-02-05 15:25:36"}
+{"level":"info","message":{"duration":"2ms","ip":"::1","method":"GET","path":"/api/feeds/1/articles","status":304,"type":"request"},"service":"ash-backend","timestamp":"2025-02-05 15:25:36"}
+{"level":"info","message":"Fetching all feeds","service":"ash-backend","timestamp":"2025-02-05 15:25:42"}
+{"level":"info","message":"Successfully retrieved 1 feeds","service":"ash-backend","timestamp":"2025-02-05 15:25:42"}
+{"level":"info","message":{"duration":"1ms","ip":"::1","method":"GET","path":"/api/feeds","status":304,"type":"request"},"service":"ash-backend","timestamp":"2025-02-05 15:25:42"}
+{"level":"info","message":"Fetching articles for feed ID: 1","service":"ash-backend","timestamp":"2025-02-05 15:25:42"}
+{"level":"info","message":"Successfully retrieved 0 articles for feed ID: 1","service":"ash-backend","timestamp":"2025-02-05 15:25:42"}
+{"level":"info","message":{"duration":"2ms","ip":"::1","method":"GET","path":"/api/feeds/1/articles","status":304,"type":"request"},"service":"ash-backend","timestamp":"2025-02-05 15:25:42"}
+{"level":"info","message":{"duration":"2ms","ip":"::1","method":"GET","path":"/","status":404,"type":"request"},"service":"ash-backend","timestamp":"2025-02-05 15:26:23"}
+{"level":"info","message":{"duration":"0ms","ip":"::1","method":"GET","path":"/","status":404,"type":"request"},"service":"ash-backend","timestamp":"2025-02-05 15:26:23"}
+{"level":"info","message":{"duration":"1ms","ip":"::1","method":"OPTIONS","path":"/api/feeds","status":204,"type":"request"},"service":"ash-backend","timestamp":"2025-02-05 15:26:26"}
+{"level":"info","message":"Attempting to add new feed: https://www.anquanke.com/","service":"ash-backend","timestamp":"2025-02-05 15:26:26"}
+{"error":{},"level":"error","message":"Error parsing feed:","service":"ash-backend","timestamp":"2025-02-05 15:26:27","url":"https://www.anquanke.com/"}
+{"level":"info","message":{"duration":"678ms","ip":"::1","method":"POST","path":"/api/feeds","status":400,"type":"request"},"service":"ash-backend","timestamp":"2025-02-05 15:26:27"}
+{"level":"info","message":{"duration":"0ms","ip":"::1","method":"OPTIONS","path":"/api/feeds","status":204,"type":"request"},"service":"ash-backend","timestamp":"2025-02-05 15:27:59"}
+{"level":"info","message":"Attempting to add new feed: https://app.follow.is/share/lists/99975124097886208","service":"ash-backend","timestamp":"2025-02-05 15:27:59"}
+{"error":{},"level":"error","message":"Error parsing feed:","service":"ash-backend","timestamp":"2025-02-05 15:27:59","url":"https://app.follow.is/share/lists/99975124097886208"}
+{"level":"info","message":{"duration":"805ms","ip":"::1","method":"POST","path":"/api/feeds","status":400,"type":"request"},"service":"ash-backend","timestamp":"2025-02-05 15:27:59"}
+{"level":"info","message":"Initializing database tables","service":"ash-backend","timestamp":"2025-02-05 15:28:08"}
+{"level":"info","message":"ASH Backend Server running on port 3000","service":"ash-backend","timestamp":"2025-02-05 15:28:08"}
+{"level":"info","message":"Connected to SQLite database","service":"ash-backend","timestamp":"2025-02-05 15:28:08"}
+{"level":"info","message":"Feeds table initialized successfully","service":"ash-backend","timestamp":"2025-02-05 15:28:08"}
+{"level":"info","message":"Articles table initialized successfully","service":"ash-backend","timestamp":"2025-02-05 15:28:08"}
+{"level":"info","message":"Fetching all feeds","service":"ash-backend","timestamp":"2025-02-05 15:28:08"}
+{"level":"info","message":"Successfully retrieved 1 feeds","service":"ash-backend","timestamp":"2025-02-05 15:28:08"}
+{"level":"info","message":{"duration":"6ms","ip":"::1","method":"GET","path":"/api/feeds","status":304,"type":"request"},"service":"ash-backend","timestamp":"2025-02-05 15:28:08"}
+{"level":"info","message":"Starting scheduled feed update job","service":"ash-backend","timestamp":"2025-02-05 15:30:00"}
+{"level":"info","message":"Found 1 feeds to update","service":"ash-backend","timestamp":"2025-02-05 15:30:00"}
+{"level":"info","message":"Updating feed: 知乎每日精选 (https://www.zhihu.com/rss)","service":"ash-backend","timestamp":"2025-02-05 15:30:00"}
+{"level":"info","message":"Completed feed update job","service":"ash-backend","timestamp":"2025-02-05 15:30:07"}
+{"level":"info","message":"Successfully updated feed: 知乎每日精选, added 57 new articles","service":"ash-backend","timestamp":"2025-02-05 15:30:07"}
+{"level":"info","message":"Starting scheduled feed update job","service":"ash-backend","timestamp":"2025-02-05 16:00:00"}
+{"level":"info","message":"Found 1 feeds to update","service":"ash-backend","timestamp":"2025-02-05 16:00:00"}
+{"level":"info","message":"Updating feed: 知乎每日精选 (https://www.zhihu.com/rss)","service":"ash-backend","timestamp":"2025-02-05 16:00:00"}
+{"level":"info","message":"Completed feed update job","service":"ash-backend","timestamp":"2025-02-05 16:00:06"}
+{"level":"info","message":"Successfully updated feed: 知乎每日精选, added 0 new articles","service":"ash-backend","timestamp":"2025-02-05 16:00:07"}
+{"level":"info","message":"Starting scheduled feed update job","service":"ash-backend","timestamp":"2025-02-05 16:30:00"}
+{"level":"info","message":"Found 1 feeds to update","service":"ash-backend","timestamp":"2025-02-05 16:30:00"}
+{"level":"info","message":"Updating feed: 知乎每日精选 (https://www.zhihu.com/rss)","service":"ash-backend","timestamp":"2025-02-05 16:30:00"}
+{"level":"info","message":"Completed feed update job","service":"ash-backend","timestamp":"2025-02-05 16:30:06"}
+{"level":"info","message":"Successfully updated feed: 知乎每日精选, added 0 new articles","service":"ash-backend","timestamp":"2025-02-05 16:30:06"}
+{"level":"info","message":"Starting scheduled feed update job","service":"ash-backend","timestamp":"2025-02-05 17:00:00"}
+{"level":"info","message":"Found 1 feeds to update","service":"ash-backend","timestamp":"2025-02-05 17:00:00"}
+{"level":"info","message":"Updating feed: 知乎每日精选 (https://www.zhihu.com/rss)","service":"ash-backend","timestamp":"2025-02-05 17:00:00"}
+{"level":"info","message":"Completed feed update job","service":"ash-backend","timestamp":"2025-02-05 17:00:07"}
+{"level":"info","message":"Successfully updated feed: 知乎每日精选, added 0 new articles","service":"ash-backend","timestamp":"2025-02-05 17:00:07"}
+{"level":"info","message":"Starting scheduled feed update job","service":"ash-backend","timestamp":"2025-02-05 17:30:00"}
+{"level":"info","message":"Found 1 feeds to update","service":"ash-backend","timestamp":"2025-02-05 17:30:00"}
+{"level":"info","message":"Updating feed: 知乎每日精选 (https://www.zhihu.com/rss)","service":"ash-backend","timestamp":"2025-02-05 17:30:00"}
+{"level":"info","message":"Completed feed update job","service":"ash-backend","timestamp":"2025-02-05 17:30:04"}
+{"level":"info","message":"Successfully updated feed: 知乎每日精选, added 0 new articles","service":"ash-backend","timestamp":"2025-02-05 17:30:04"}
+{"level":"info","message":"Starting scheduled feed update job","service":"ash-backend","timestamp":"2025-02-05 18:00:00"}
+{"level":"info","message":"Found 1 feeds to update","service":"ash-backend","timestamp":"2025-02-05 18:00:00"}
+{"level":"info","message":"Updating feed: 知乎每日精选 (https://www.zhihu.com/rss)","service":"ash-backend","timestamp":"2025-02-05 18:00:00"}
+{"level":"info","message":"Completed feed update job","service":"ash-backend","timestamp":"2025-02-05 18:00:07"}
+{"level":"info","message":"Successfully updated feed: 知乎每日精选, added 0 new articles","service":"ash-backend","timestamp":"2025-02-05 18:00:07"}
+{"level":"info","message":"Starting scheduled feed update job","service":"ash-backend","timestamp":"2025-02-05 18:30:00"}
+{"level":"info","message":"Found 1 feeds to update","service":"ash-backend","timestamp":"2025-02-05 18:30:00"}
+{"level":"info","message":"Updating feed: 知乎每日精选 (https://www.zhihu.com/rss)","service":"ash-backend","timestamp":"2025-02-05 18:30:00"}
+{"level":"info","message":"Completed feed update job","service":"ash-backend","timestamp":"2025-02-05 18:30:05"}
+{"level":"info","message":"Successfully updated feed: 知乎每日精选, added 0 new articles","service":"ash-backend","timestamp":"2025-02-05 18:30:05"}
+{"level":"info","message":"Starting scheduled feed update job","service":"ash-backend","timestamp":"2025-02-05 19:00:00"}
+{"level":"info","message":"Found 1 feeds to update","service":"ash-backend","timestamp":"2025-02-05 19:00:00"}
+{"level":"info","message":"Updating feed: 知乎每日精选 (https://www.zhihu.com/rss)","service":"ash-backend","timestamp":"2025-02-05 19:00:00"}
+{"level":"info","message":"Completed feed update job","service":"ash-backend","timestamp":"2025-02-05 19:00:07"}
+{"level":"info","message":"Successfully updated feed: 知乎每日精选, added 0 new articles","service":"ash-backend","timestamp":"2025-02-05 19:00:07"}
+{"level":"info","message":"Starting scheduled feed update job","service":"ash-backend","timestamp":"2025-02-05 19:30:00"}
+{"level":"info","message":"Found 1 feeds to update","service":"ash-backend","timestamp":"2025-02-05 19:30:00"}
+{"level":"info","message":"Updating feed: 知乎每日精选 (https://www.zhihu.com/rss)","service":"ash-backend","timestamp":"2025-02-05 19:30:00"}
+{"level":"info","message":"Completed feed update job","service":"ash-backend","timestamp":"2025-02-05 19:30:04"}
+{"level":"info","message":"Successfully updated feed: 知乎每日精选, added 0 new articles","service":"ash-backend","timestamp":"2025-02-05 19:30:05"}
+{"level":"info","message":"Starting scheduled feed update job","service":"ash-backend","timestamp":"2025-02-05 20:00:00"}
+{"level":"info","message":"Found 1 feeds to update","service":"ash-backend","timestamp":"2025-02-05 20:00:00"}
+{"level":"info","message":"Updating feed: 知乎每日精选 (https://www.zhihu.com/rss)","service":"ash-backend","timestamp":"2025-02-05 20:00:00"}
+{"level":"info","message":"Completed feed update job","service":"ash-backend","timestamp":"2025-02-05 20:00:05"}
+{"level":"info","message":"Successfully updated feed: 知乎每日精选, added 0 new articles","service":"ash-backend","timestamp":"2025-02-05 20:00:05"}
+{"level":"info","message":"Starting scheduled feed update job","service":"ash-backend","timestamp":"2025-02-05 20:30:00"}
+{"level":"info","message":"Found 1 feeds to update","service":"ash-backend","timestamp":"2025-02-05 20:30:00"}
+{"level":"info","message":"Updating feed: 知乎每日精选 (https://www.zhihu.com/rss)","service":"ash-backend","timestamp":"2025-02-05 20:30:00"}
+{"level":"info","message":"Completed feed update job","service":"ash-backend","timestamp":"2025-02-05 20:30:04"}
+{"level":"info","message":"Successfully updated feed: 知乎每日精选, added 0 new articles","service":"ash-backend","timestamp":"2025-02-05 20:30:04"}
+{"level":"info","message":"Starting scheduled feed update job","service":"ash-backend","timestamp":"2025-02-05 21:00:00"}
+{"level":"info","message":"Found 1 feeds to update","service":"ash-backend","timestamp":"2025-02-05 21:00:00"}
+{"level":"info","message":"Updating feed: 知乎每日精选 (https://www.zhihu.com/rss)","service":"ash-backend","timestamp":"2025-02-05 21:00:00"}
+{"level":"info","message":"Completed feed update job","service":"ash-backend","timestamp":"2025-02-05 21:00:04"}
+{"level":"info","message":"Successfully updated feed: 知乎每日精选, added 0 new articles","service":"ash-backend","timestamp":"2025-02-05 21:00:05"}
+{"level":"info","message":"Starting scheduled feed update job","service":"ash-backend","timestamp":"2025-02-05 21:30:00"}
+{"level":"info","message":"Found 1 feeds to update","service":"ash-backend","timestamp":"2025-02-05 21:30:00"}
+{"level":"info","message":"Updating feed: 知乎每日精选 (https://www.zhihu.com/rss)","service":"ash-backend","timestamp":"2025-02-05 21:30:00"}
+{"level":"info","message":"Completed feed update job","service":"ash-backend","timestamp":"2025-02-05 21:30:05"}
+{"level":"info","message":"Successfully updated feed: 知乎每日精选, added 0 new articles","service":"ash-backend","timestamp":"2025-02-05 21:30:05"}
+{"level":"info","message":"Starting scheduled feed update job","service":"ash-backend","timestamp":"2025-02-05 22:00:00"}
+{"level":"info","message":"Found 1 feeds to update","service":"ash-backend","timestamp":"2025-02-05 22:00:00"}
+{"level":"info","message":"Updating feed: 知乎每日精选 (https://www.zhihu.com/rss)","service":"ash-backend","timestamp":"2025-02-05 22:00:00"}
+{"level":"info","message":"Completed feed update job","service":"ash-backend","timestamp":"2025-02-05 22:00:03"}
+{"level":"info","message":"Successfully updated feed: 知乎每日精选, added 0 new articles","service":"ash-backend","timestamp":"2025-02-05 22:00:04"}
+{"level":"info","message":"Starting scheduled feed update job","service":"ash-backend","timestamp":"2025-02-05 22:30:00"}
+{"level":"info","message":"Found 1 feeds to update","service":"ash-backend","timestamp":"2025-02-05 22:30:00"}
+{"level":"info","message":"Updating feed: 知乎每日精选 (https://www.zhihu.com/rss)","service":"ash-backend","timestamp":"2025-02-05 22:30:00"}
+{"level":"info","message":"Completed feed update job","service":"ash-backend","timestamp":"2025-02-05 22:30:05"}
+{"level":"info","message":"Successfully updated feed: 知乎每日精选, added 0 new articles","service":"ash-backend","timestamp":"2025-02-05 22:30:05"}
+{"level":"info","message":"Starting scheduled feed update job","service":"ash-backend","timestamp":"2025-02-05 23:00:00"}
+{"level":"info","message":"Found 1 feeds to update","service":"ash-backend","timestamp":"2025-02-05 23:00:00"}
+{"level":"info","message":"Updating feed: 知乎每日精选 (https://www.zhihu.com/rss)","service":"ash-backend","timestamp":"2025-02-05 23:00:00"}
+{"level":"info","message":"Completed feed update job","service":"ash-backend","timestamp":"2025-02-05 23:00:07"}
+{"level":"info","message":"Successfully updated feed: 知乎每日精选, added 0 new articles","service":"ash-backend","timestamp":"2025-02-05 23:00:08"}
+{"level":"info","message":"Starting scheduled feed update job","service":"ash-backend","timestamp":"2025-02-05 23:30:00"}
+{"level":"info","message":"Found 1 feeds to update","service":"ash-backend","timestamp":"2025-02-05 23:30:00"}
+{"level":"info","message":"Updating feed: 知乎每日精选 (https://www.zhihu.com/rss)","service":"ash-backend","timestamp":"2025-02-05 23:30:00"}
+{"level":"info","message":"Completed feed update job","service":"ash-backend","timestamp":"2025-02-05 23:30:05"}
+{"level":"info","message":"Successfully updated feed: 知乎每日精选, added 0 new articles","service":"ash-backend","timestamp":"2025-02-05 23:30:05"}
+{"level":"info","message":"Initializing database tables","service":"ash-backend","timestamp":"2025-02-05 23:55:42"}
+{"level":"info","message":"ASH Backend Server running on port 3000","service":"ash-backend","timestamp":"2025-02-05 23:55:42"}
+{"level":"info","message":"Connected to SQLite database","service":"ash-backend","timestamp":"2025-02-05 23:55:42"}
+{"level":"info","message":"Feeds table initialized successfully","service":"ash-backend","timestamp":"2025-02-05 23:55:42"}
+{"level":"info","message":"Articles table initialized successfully","service":"ash-backend","timestamp":"2025-02-05 23:55:42"}
+{"level":"info","message":"Fetching all feeds","service":"ash-backend","timestamp":"2025-02-05 23:55:42"}
+{"level":"info","message":"Successfully retrieved 1 feeds","service":"ash-backend","timestamp":"2025-02-05 23:55:42"}
+{"level":"info","message":{"duration":"7ms","ip":"::1","method":"GET","path":"/api/feeds","status":200,"type":"request"},"service":"ash-backend","timestamp":"2025-02-05 23:55:42"}
+{"level":"info","message":"Fetching all feeds","service":"ash-backend","timestamp":"2025-02-05 23:56:02"}
+{"level":"info","message":"Successfully retrieved 1 feeds","service":"ash-backend","timestamp":"2025-02-05 23:56:02"}
+{"level":"info","message":{"duration":"4ms","ip":"::1","method":"GET","path":"/api/feeds","status":304,"type":"request"},"service":"ash-backend","timestamp":"2025-02-05 23:56:02"}
+{"level":"info","message":"Starting scheduled feed update job","service":"ash-backend","timestamp":"2025-02-06 00:00:00"}
+{"level":"info","message":"Found 1 feeds to update","service":"ash-backend","timestamp":"2025-02-06 00:00:00"}
+{"level":"info","message":"Updating feed: 知乎每日精选 (https://www.zhihu.com/rss)","service":"ash-backend","timestamp":"2025-02-06 00:00:00"}
+{"level":"info","message":"Completed feed update job","service":"ash-backend","timestamp":"2025-02-06 00:00:04"}
+{"level":"info","message":"Successfully updated feed: 知乎每日精选, added 0 new articles","service":"ash-backend","timestamp":"2025-02-06 00:00:05"}
