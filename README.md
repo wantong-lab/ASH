@@ -1,10 +1,14 @@
 # ASH - Advanced Smart Hub
 
-ASH (Advanced Smart Hub) 是一个现代化的RSS阅读器，提供简洁优雅的阅读体验。通过ASH，你可以轻松管理和阅读你的RSS订阅内容。
+ASH (Advanced Smart Hub) 是一个现代化的信息聚合与个性化浏览工具，为信息重度用户（如新闻爱好者、开发者、内容创作者）提供简洁优雅的阅读体验。通过ASH，你可以轻松管理和阅读来自多个平台的订阅内容。
+
+## 产品愿景
+
+打造下一代信息聚合与个性化浏览工具，让用户能够更轻松地获取、管理和分享有价值的信息。
 
 ## 功能特点
 
-### MVP版本（当前）
+### 当前版本（MVP）
 - RSS订阅管理
   - 添加新的RSS订阅源
   - 查看订阅列表
@@ -15,14 +19,42 @@ ASH (Advanced Smart Hub) 是一个现代化的RSS阅读器，提供简洁优雅�
   - 支持图片显示
   - 原文链接跳转
 
+### 即将推出的功能
+1. **多源信息聚合**
+   - 支持社交媒体（X、Instagram、YouTube）
+   - 支持播客和通知（GitHub仓库更新等）
+   - 自定义脚本抓取支持
+
+2. **AI 智能处理**
+   - 文章自动摘要与翻译
+   - 基于阅读历史的个性化推荐
+   - AI驱动的每日简报（早晚各一次）
+
+3. **社交与协作**
+   - 订阅列表共享（公开/私密）
+   - 用户关注系统
+   - 文章评论与批注
+
+4. **跨平台支持**
+   - 桌面客户端（Windows/macOS/Linux）
+   - 浏览器插件
+   - 移动端应用（规划中）
+
+5. **扩展功能**
+   - 插件系统（支持自定义数据源）
+   - 开放API接口
+   - 社区驱动的内容适配器
+
 ## 技术栈
 
 ### 前端
-- React 18
+- Next.js 13+ (React 18)
 - TypeScript
-- Chakra UI（UI组件库）
+- TailwindCSS（UI样式）
+- Shadcn/ui（UI组件库）
 - React Query（数据获取和缓存）
-- Vite（构建工具）
+- Electron（桌面应用，规划中）
+- React Native（移动端，规划中）
 
 ### 后端
 - Node.js
@@ -31,6 +63,16 @@ ASH (Advanced Smart Hub) 是一个现代化的RSS阅读器，提供简洁优雅�
 - RSS Parser（RSS解析）
 - Winston（日志记录）
 - Node-cron（定时任务）
+
+### AI 集成（规划中）
+- OpenAI API（文本摘要和翻译）
+- Langchain（AI工作流）
+- Whisper（语音转文字）
+
+### 基础设施
+- Docker（容器化部署）
+- GitHub Actions（CI/CD）
+- Vercel（前端部署）
 
 ## 快速开始
 
@@ -82,12 +124,43 @@ npm run dev
 
 ## 开发计划
 
-### 下一步功能
+### 第一阶段（当前）
+- [x] 基础RSS订阅功能
+- [x] 文章阅读界面
+- [x] 自动更新订阅内容
+- [ ] 移动端适配优化
 - [ ] 订阅源分类管理
 - [ ] 文章搜索功能
-- [ ] 文章收藏功能
-- [ ] 阅读进度记录
-- [ ] 移动端适配优化
+
+### 第二阶段（进行中）
+- [ ] AI 功能集成
+  - [ ] 文章自动摘要
+  - [ ] 多语言翻译
+  - [ ] 每日AI简报
+- [ ] 社交功能
+  - [ ] 用户系统
+  - [ ] 订阅列表共享
+  - [ ] 文章评论
+
+### 第三阶段（规划中）
+- [ ] 多平台支持
+  - [ ] 桌面客户端（Electron）
+  - [ ] 浏览器插件
+  - [ ] 移动应用（React Native）
+- [ ] 扩展系统
+  - [ ] 插件API
+  - [ ] 自定义数据源
+  - [ ] 社区适配器
+
+### 第四阶段（远期）
+- [ ] 高级AI功能
+  - [ ] 个性化推荐
+  - [ ] 智能标签
+  - [ ] 内容聚类
+- [ ] 社区生态
+  - [ ] 插件市场
+  - [ ] 订阅源目录
+  - [ ] 贡献者计划
 
 ## 项目结构
 
@@ -98,11 +171,38 @@ npm run dev
 │   │   └── index.js       # 后端入口文件
 │   └── package.json
 ├── frontend/              # ASH前端代码
-│   ├── src/
-│   │   ├── App.tsx       # 主应用组件
-│   │   └── main.tsx      # 前端入口文件
-│   ├── index.html
-│   └── package.json
+│   ├── app/              # Next.js 13+ App Router 目录
+│   │   ├── globals.css   # 全局样式文件
+│   │   ├── layout.tsx    # 根布局组件
+│   │   └── page.tsx      # 首页组件
+│   ├── components/       # 可复用组件目录
+│   │   ├── articles/     # 文章相关组件
+│   │   ├── layouts/      # 布局相关组件
+│   │   ├── navigation/   # 导航相关组件
+│   │   ├── sidebars/     # 侧边栏组件
+│   │   ├── ui/          # 基础UI组件
+│   │   ├── DailyBriefing.tsx  # 每日简报组件
+│   │   ├── FeedItem.tsx      # RSS源条目组件
+│   │   ├── FeedView.tsx      # RSS源查看组件
+│   │   ├── Navigation.tsx    # 主导航组件
+│   │   ├── SearchBar.tsx     # 搜索栏组件
+│   │   └── theme-provider.tsx # 主题提供者组件
+│   ├── contexts/         # React Context 目录
+│   │   └── ThemeContext.tsx  # 主题上下文
+│   ├── hooks/           # 自定义Hook目录
+│   │   ├── use-mobile.tsx   # 移动端适配Hook
+│   │   └── use-toast.ts     # 消息提示Hook
+│   ├── lib/            # 工具库目录
+│   │   └── utils.ts    # 通用工具函数
+│   ├── public/         # 静态资源目录
+│   ├── styles/         # 样式文件目录
+│   ├── types/          # TypeScript类型定义目录
+│   ├── utils/          # 工具函数目录
+│   ├── App.tsx         # 应用程序主组件
+│   ├── next.config.mjs # Next.js配置文件
+│   ├── package.json    # 项目依赖配置
+│   ├── tailwind.config.ts # Tailwind CSS配置
+│   └── tsconfig.json   # TypeScript配置
 └── README.md
 ```
 
